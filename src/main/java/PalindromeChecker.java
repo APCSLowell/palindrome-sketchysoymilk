@@ -61,11 +61,11 @@ public boolean palindrome(String word)
   word = noSpaces(word);
   word = onlyLetters(word);
   word = noCaps(word);
-  String hi = "";
-  for (int i = word.length(); i > 0; i--) {
-    hi = hi + word.substring(i-1, i);
-  }
-  if (hi.equals(word))
+  // String hi = "";
+  // for (int i = word.length(); i > 0; i--) {
+  //   hi = hi + word.substring(i-1, i);
+  // }
+  if (word.equals(reverse(word ))
     return true;
   return false;
 }
