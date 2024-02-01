@@ -61,10 +61,6 @@ public boolean palindrome(String word)
   word = noSpaces(word);
   word = onlyLetters(word);
   word = noCaps(word);
-  // String hi = "";
-  // for (int i = word.length(); i > 0; i--) {
-  //   hi = hi + word.substring(i-1, i);
-  // }
   String hi = "";
   hi = reverse(word);
   if (word.equals(hi))
