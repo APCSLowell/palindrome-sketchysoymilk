@@ -65,7 +65,9 @@ public boolean palindrome(String word)
   // for (int i = word.length(); i > 0; i--) {
   //   hi = hi + word.substring(i-1, i);
   // }
-  if (word.equals(sNew))
+  String hi = "";
+  hi = reverse(word);
+  if (word.equals(hi))
     return true;
   return false;
 }
